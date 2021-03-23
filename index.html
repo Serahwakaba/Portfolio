@@ -4,6 +4,9 @@
     <title>PERSONAL WEBSITE</title>
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script></head>
  <body>
     <div class="container">
@@ -30,16 +33,72 @@
             </div>
             <div class="about">
                 <h1 style="text-align:center;">ABOUT</h1>
-                <div>
-                <p>My Name is Serah Gathoni Wakaba, a Front-End web developer, technology enthusiast<br>
-                   and much interested on fast evolving web technologies. Wakaba is motivated by day-day<br> 
-                   problems surrounding us in our society, place of work, and world-wide at large which moves<br>
-                    her problem solving skills with the best use of earlier acquired know-how in various fields.<br>
-                    She also endeavors to be as productive as possible in any team work set in and<br>
+                <div style="display:inline-flex">
+                    <div class="me">
+                        <img id="me" src="./images/WhatsApp Image 2021-02-24 at 9.18.43 AM (17).jpeg">
+                       </div>
+                <p style="padding-top: 5%; padding-right:4%;margin-right:40%; font-family:monospace; font-size:medium;">My Name is Serah Gathoni Wakaba, 
+                    a Front-End web developer,<br> technology enthusiast
+                   and much interested on fast evolving <br>
+                   web technologies. Wakaba is motivated by day-day
+                   problems <br>surrounding us in our society, place of work, and world-wide<br> at large which moves
+                    her problem solving skills with the best<br> use of earlier acquired know-how in various fields.
+                    She also<br> endeavors to be as productive as possible in any team work set in and
                      in best
                      proffesional way.</p>
-                     <img src=""
+                     
                     </div>
+                   
+            </div>
+            <div class="lang" style="background-color:aqua;">
+                <h1 style="text-align:center;"><b>LANGUAGES AND FRAMEWORKS</b></h1>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" style="padding-left: 40%;padding-top: 10%;">
+                      <div class="item active">
+                        <img src="./images/html.png"  style="width:20%;height:20%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="./images/css.png" alt="Chicago" style="width:40%;">
+                      </div>
+                    
+                      <div class="item">
+                        <img src="./images/js.png" alt="New york" style="width:20%;">
+                      </div>
+                      <div class="item">
+                        <img src="./images/vuejs.jpeg" alt="Chicago" style="width:40%;">
+                      </div>
+                      <div class="item">
+                        <img src="./images/phalcon-tutorial.jpg" alt="Chicago" style="width:40%;">
+                      </div>
+                      <div class="item">
+                        <img src="./images/php.png" alt="Chicago" style="width:40%;">
+                      </div>
+                      <div class="item">
+                        <img src="./images/python.jpeg" alt="Chicago" style="width:40%;">
+                      </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                
             </div>
 
      </div>
