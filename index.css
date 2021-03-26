@@ -12,9 +12,13 @@ body{
 }
 .intro{
     text-align: center;
-    padding-top:15%;
+    padding-top:20%;
     padding-left: 5%;
     color:whitesmoke;
+}
+.round{
+    border-radius:60%;
+    border-style: solid;
 }
 
 .logo{
