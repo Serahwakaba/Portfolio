@@ -13,6 +13,7 @@
   </head>
  <body>
     <div class="container">
+    
         <div id="landing" class="landing">
             <div class="image" style="background-image: url(./images/itl.at_abstract-wallpaper-hd_85496.png);">
               <div class="logo">
@@ -29,13 +30,14 @@
             <div class="nav">
             <ul id="about">
                 <li><a class="active" href="#landing">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#aboutme">ABOUT</a></li>
                 <li><a href="#lang">LANGUAGES</a></li>
                 <li><a href="#projects">PORTFOLIO</a></li>
                 <li><a href="#contact">CONTACT</a></li>
               </ul>
             </div>
-            <div class="about" id="about">
+            <div class="content">
+            <div class="about" id="aboutme">
 
             <div class="row" style="background-color: rgba(172, 161, 152, 0.062);">
               <div class="col-md-5 no-gutters">
@@ -44,13 +46,14 @@
                         width="300" height="360">
                 </div>
             </div>
+
             <br><br><br>
               <div class="col">
                <div class="j" >
                       <div class="conta" >
                           <h6 style="font-size:100%;font-size: 100%;
                           letter-spacing: 2px;
-                          line-height: 200%;text-align:center;font-size:150%;">My Name is Wakaba Serah Gathoni, a Front-End web developer,
+                          line-height: 200%;text-align:center;font-size:100%;">My Name is Wakaba Serah Gathoni, a Front-End web developer,
                               technology enthusiast and much interested on fast evolving web technologies.
                               Wakaba is motivated by day-day problems surrounding us in our society, place of work, and world-wide at large
                               which moves her problem solving skills with the best use of earlier acquired know-how in various fields.<br>
@@ -64,16 +67,16 @@
               
           </div>
         </div>
-        <br>        <br>
+        <br><br>
         <br>
         <br>
 
-      
-            <div class="lang" id="lang" style="background-color:aqua;">
+            <div class="languages">
+            <div class="lang" id="lang" style="background-color:white">
                 <h1 style="text-align:center;"><b>LANGUAGES AND FRAMEWORKS</b></h1>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                   
+                  
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" style="padding-left: 40%;padding-top: 5%;">
                       <div class="item active">
@@ -114,28 +117,28 @@
                   </div>
                 </div>
                 <span style="
-                font-size: 100%;
-                letter-spacing: 2px;
-                line-height: 200%;text-align:center;font-size:150%;">Moved by the spirit to deliver and passion for web development,
+                          font-size:100%;font-size: 100%;
+                          letter-spacing: 2px;
+                          line-height: 200%;text-align:center;font-size:100%;">Moved by the spirit to deliver and passion for web development,
                      I have acquired skills in the above languages, database and frameworks. 
                      By learning the rules of each tool, i have acquired
                      exclusive ability to make development of a web application in various ways.</span>
-                
-     <div  class="projects"id="projects">
+            </div>
+            </div>         
+         <div  class="projects"id="projects">
          <h1 style="text-align:center;"><b>PROJECTS</b></h1>
-         <span style="padding-left:10%; font-family: ;
-         font-size:150%;
-         letter-spacing: 2px; 
-         ;text-align:center;">In my learning journey on the above
+         <span id="text" style="font-size:100%;font-size: 100%;
+         letter-spacing: 2px;
+         line-height: 200%;text-align:center;font-size:100%;">In my learning journey on the above
            tools, i have over the past,made efforts to 
-           develop <br><p></p>web-based applications. Below are my highlighted 
+           develop web-based applications. Below are my highlighted 
            software applications.</span>
-         <div class=nav1>
+         <div class=nav1 id="n">
                 <a href="#projects"> <button style="background-color: rgb(226, 17, 86); margin:2%; padding:1%;width:15%">ALL</button></a>
                 <a href="#html"><button style="margin:5%;padding:1%;">HTML/CSS</button></a>
                 <a href="#vue"> <button style="margin:5%;padding:1%;">VUEJS</button></a>
                 <a href="#odi"> <button style="margin:5%;padding:1%;">PHALCON</button></a>
-                 <div class="projects" id="projects">
+                 <div class="project" id="projects">
                      <div id="html">
                      <p><b>ANITAS KITCHEN</b></p>
                     <video width="100%" controls>
@@ -143,9 +146,7 @@
                         <source src="g.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
-                      <p style="f
-                      
-                      ">Anitas Kitchen site enables one to view the Restaurants Menu.<br> It shows diffrent foods offered and drinks for breakfast lunch and super</p>
+                      <p>Anitas Kitchen site enables one to view the Restaurants Menu.<br> It shows diffrent foods offered and drinks for breakfast lunch and super</p>
                       <a href="https://serahwakaba.github.io/Anitas-Kitchen-project/"><button>VIEW REPOSITORY</button></a>
 
                     </div>
@@ -157,6 +158,8 @@
                         <source src="movie.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                       </video>
+                    </div>
+                    <div class="project">
                       <p style="font-family: 'Staatliches', cursive;"> Online Food Ordering website<br>
                     Created In VUEJS</p>
                       <a href="https://serahwakaba.github.io/Anitas-Kitchen-project/"><button>VIEW REPOSITORY</button></a>
@@ -234,8 +237,26 @@
             </div>
           </div>
          
-          </div>    
-         </div>
+          </div>  
         </div>
+               </div>
+        </div>
+        </div>
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          var nav = document.getElementById("about");
+          var sticky = nav.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              nav.classList.add("sticky");
+            } else {
+              nav.classList.remove("sticky");
+            }
+          }
+         
+          </script>
+          
  </body>
 </html>

@@ -26,6 +26,27 @@ body{
     padding-left:7%;
     padding-top: 5%;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width:85%;
+    z-index: 1;
+
+  }
+ 
+  
+.sticky + .content {
+  padding-top: 102px;
+}
+.sticky + .content {
+    padding-top: 102px;
+  }
+.sticky + .aboutme {
+    padding-bottom: 102px;
+  }
+  .sticky .languages {
+    padding-bottom: 102px;
+  }
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -67,6 +88,10 @@ li a:hover {
     height:80%;
     padding: 10%;
 }
+#text{
+    text-align:center;
+    
+}
 #mycorousel{
     height:760%;
 
@@ -77,8 +102,12 @@ li a:hover {
    
 }
 .projects{
-    background-image: linear-gradient(#54ffccab, #2e86de7c);
+    padding-top: 10%;
 
+}
+
+.lang{
+    padding-top:10%;
 }
 
     .bg-custom{
@@ -119,6 +148,11 @@ li a:hover {
     a:hover{
     text-decoration: none;
     color:#ddd;
+    }
+    .pt-4{
+        font-size:100%;font-size: 100%;
+        letter-spacing: 2px;
+        line-height: 200%;text-align:center;font-size:100%;
     }
     .fa{
     font-size: 40px;
